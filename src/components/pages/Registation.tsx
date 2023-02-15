@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card, Container, Form } from "react-bootstrap";
+import { SCREENS } from "../../routes/endpoints";
 
 export const Registation = () => {
   return (
@@ -42,7 +43,7 @@ export const Registation = () => {
           <Form.Control type="password" />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Зарегистрироваться
+          <a href={SCREENS.SCREEN_REGISTR}>Зарегистрироваться</a>
         </Button>
       </Form>
     </Card.Body>
